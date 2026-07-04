@@ -1,0 +1,56 @@
+{
+  "organization_metadata": {
+    "company_name": "Global Medical Center Inc.",
+    "industry_sector": "Healthcare / Clinical Operations",
+    "compliance_target": "HIPAA / GDPR / ISO-27001",
+    "last_telemetry_sync": "2026-07-04T18:56:00Z"
+  },
+  "infrastructure_topology": [
+    {
+      "node_id": "SRV-EHR-01",
+      "name": "Core Electronic Health Records (EHR) Database Server",
+      "ip_address": "10.0.1.50",
+      "criticality": "CRITICAL",
+      "contains_sensitive_data": true,
+      "operating_system": "Windows Server 2019",
+      "open_ports": [
+        {"port": 443, "service": "https", "version": "IIS 10.0"},
+        {"port": 1433, "service": "ms-sql-s", "version": "Microsoft SQL Server 2019"},
+        {"port": 3389, "service": "ms-wbt-server", "version": "Remote Desktop Protocol (RDP)"}
+      ],
+      "network_segment": "VLAN-10-Medical-Core"
+    },
+    {
+      "node_id": "GW-PACS-02",
+      "name": "DICOM / PACS Imaging Gateway",
+      "ip_address": "10.0.1.60",
+      "criticality": "HIGH",
+      "contains_sensitive_data": true,
+      "operating_system": "Ubuntu Linux 20.04 LTS",
+      "open_ports": [
+        {"port": 104, "service": "dicom", "version": "Dcmtk 3.6.5"},
+        {"port": 22, "service": "ssh", "version": "OpenSSH 8.2p1"}
+      ],
+      "network_segment": "VLAN-10-Medical-Core"
+    },
+    {
+      "node_id": "WORK-REC-10",
+      "name": "Front-Desk Reception & Appointment Terminal",
+      "ip_address": "10.0.2.115",
+      "criticality": "MEDIUM",
+      "contains_sensitive_data": false,
+      "operating_system": "Windows 10",
+      "open_ports": [
+        {"port": 80, "service": "http", "version": "HttpServer 1.0"},
+        {"port": 445, "service": "microsoft-ds", "version": "SMBv2/v3"}
+      ],
+      "network_segment": "VLAN-20-Administration"
+    }
+  ],
+  "security_controls": {
+    "network_segmentation_enforced": false,
+    "internet_facing_rdp_allowed": true,
+    "unencrypted_smb_allowed": true,
+    "automated_backup_status": "DEGRADED"
+  }
+}
