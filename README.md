@@ -32,8 +32,9 @@ En este 2026, la ciberseguridad médica afecta directamente la seguridad del pac
 ---
 
 ## 🌐 Corporate Navigation / Navegación Corporativa
-* **Cyber Security Suite:** [neuralFocusAI Cyber Defense](https://neuralfocusai-rgb.github.io/neuralfocusIA-Cibersecurity/)
-* **AI Automation Hub:** [neuralFocusAI Hub](https://neuralfocusai-rgb.github.io/NeurofocusIA-AI-Automation/)
+* **Cyber Security Suite:** [https://neuralfocusai-rgb.github.io/neuralfocusIA-Cibersecurity/](https://neuralfocusai-rgb.github.io/neuralfocusIA-Cibersecurity/)
+* **AI Automation Hub:** [https://neuralfocusai-rgb.github.io/NeurofocusIA-AI-Automation/](https://neuralfocusai-rgb.github.io/NeurofocusIA-AI-Automation/)
+
 
 ---
 💡 *Need a custom ransomware defense pipeline deployed on your clinic's servers? Contact us for private enterprise integration or auditing.*
