@@ -1,5 +1,14 @@
 # neuralFocusAI: Open-Source Healthcare Cyber Defense Repository 🏥💻
 
+### 🌐 Quick Navigation / Navegación Rápida:
+*   [🛡️ Staff Digital Hygiene Framework](./checklist/staff-digital-hygiene.md)
+*   [🚨 Ransomware Medical Risks Analysis](./Threat-Intel/ransomware-healthcare-risks.md)
+*   [⏱️ Data Breach Emergency Protocol](./checklist/data-breach-protocol.md)
+*   [🏠 Remote Work Security Policies](./policies/remote-work-security.md)
+
+---
+
+
 Welcome to the official open-source cybersecurity repository by **neuralFocusAI**. This global space is engineered to provide medical consultories, clinics, and hospitals worldwide with enterprise-grade, practical, and highly accessible digital defense resources.
 
 In the healthcare sector, cybersecurity directly impacts patient safety, data privacy, and data protection. This repository bridges the gap between complex technical security and healthcare administration, translating advanced frameworks into clear, actionable blueprints compliant with international standards like **HIPAA** and **GDPR**.
